@@ -63,7 +63,7 @@ The project combined three technical workflows:
 
 | Step | Purpose | Related repository |
 | --- | --- | --- |
-| 1. Warehouse exploration | Extract and validate campaign performance metrics such as impressions, clicks, and CTR | [bigquery](https://github.com/anabelengarciac/bigquery) |
+| 1. Warehouse exploration | Extract and validate campaign performance metrics such as impressions, clicks, and CTR | [bigquery-skill](https://github.com/anabelengarciac/bigquery-skill) |
 | 2. Creative image enrichment | Map `AdId -> ImageUrl` using Skai so each ad could be connected to its visual creative | [spirits-creative-image-enrichment](https://github.com/anabelengarciac/spirits-creative-image-enrichment) |
 | 3. Performance dataset preparation | Export, organize, filter, compare periods, and quality-check Skai performance data | [spirits-creative-performance-ai](https://github.com/anabelengarciac/spirits-creative-performance-ai) |
 

@@ -31,7 +31,7 @@ The analysis was exploratory and associative, not causal.
 
 ## 4. Related Repositories
 
-- [bigquery](https://github.com/anabelengarciac/bigquery): warehouse exploration and query validation.
+- [bigquery-skill](https://github.com/anabelengarciac/bigquery-skill): warehouse exploration and query validation.
 - [spirits-creative-image-enrichment](https://github.com/anabelengarciac/spirits-creative-image-enrichment): image URL enrichment from Skai.
 - [spirits-creative-performance-ai](https://github.com/anabelengarciac/spirits-creative-performance-ai): Skai performance export and quality-check workflow.
 
