@@ -38,3 +38,18 @@ The analysis was exploratory and associative, not causal.
 ## 5. Interpretation
 
 The results should be read as exploratory evidence. CTR was used as an operational performance metric, but creative effectiveness may also depend on brand equity, audience, placement, budget, frequency, campaign objective, and market context.
+
+## 6. Main Methodological Contribution
+
+The most important methodological contribution is that the process can be automated and reproduced. Each stage is explicit enough to be rerun for another period, market, or campaign set:
+
+- extract performance data,
+- enrich with image URLs,
+- clean and group at creative level,
+- recalculate metrics,
+- segment by performance,
+- classify visuals with AI,
+- compare patterns,
+- document results.
+
+This transforms creative analysis from a one-off manual review into a repeatable analytics workflow.

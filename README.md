@@ -120,7 +120,38 @@ Examples of extracted visual variables:
 
 ![Conclusions slide](assets/slides/conclusions.png)
 
-The project shows that advertising creativity can be analyzed through a data-driven methodology. AI does not replace creative judgement, but it can help scale the review process, structure visual information, and support more consistent creative-performance learning.
+The most important conclusion is methodological: **the creative analysis process can be automated, documented, and reproduced**.
+
+Instead of treating creative review as a one-off manual exercise, the project turns it into a repeatable pipeline:
+
+```mermaid
+flowchart LR
+    A["Extract data"] --> B["Enrich with image URLs"]
+    B --> C["Clean and group creatives"]
+    C --> D["Recalculate metrics"]
+    D --> E["Segment by performance"]
+    E --> F["Classify visuals with AI"]
+    F --> G["Compare patterns"]
+    G --> H["Generate recommendations"]
+```
+
+### Core Conclusions
+
+| Conclusion | Why it matters |
+| --- | --- |
+| The process can be automated and reproduced | The same workflow can be rerun for new periods, markets, brands, or campaigns with consistent logic |
+| AI can structure creative judgement | Visual elements such as composition, bottle presence, promotional text, and complexity can become analyzable variables |
+| Creative analysis can scale beyond manual review | Teams can inspect many more ads without relying only on subjective creative evaluation |
+| Performance and creativity can be connected | CTR, impressions, and clicks can be compared with structured visual features |
+| The method supports learning, not causal proof | Results identify associations and hypotheses for creative strategy, not definitive causal effects |
+
+### Main Takeaway
+
+The project shows that advertising creativity can be analyzed through a data-driven methodology. AI does not replace creative judgement, but it can make the review process more scalable, traceable, and consistent.
+
+For marketing teams, the key value is not only discovering which visual patterns appeared in this dataset. The bigger value is having a **reusable analytical system** that can be applied again when new campaigns launch, new periods need to be reviewed, or creative learnings need to be compared across markets.
+
+Read more in [docs/conclusions.md](docs/conclusions.md).
 
 ## Repository Map
 
@@ -133,6 +164,7 @@ The project shows that advertising creativity can be analyzed through a data-dri
 |       |-- methodology.png
 |       `-- conclusions.png
 `-- docs/
+    |-- conclusions.md
     `-- methodology.md
 ```
 
