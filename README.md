@@ -30,6 +30,8 @@ Creative performance is often evaluated manually or through subjective marketing
 
 > Are there visual patterns associated with advertising performance in digital spirits campaigns?
 
+![Research question slide](assets/slides/research-question.png)
+
 The project focused on turning creative assets into analyzable variables such as:
 
 - product presence,
@@ -57,6 +59,15 @@ flowchart LR
     H --> I["Marketing recommendations"]
 ```
 
+The updated presentation separates the methodology into two layers:
+
+| Layer | What happened |
+| --- | --- |
+| Data extraction through Codex | BigQuery was used to work with real 2025 campaign performance data, while Skai provided the creative image URLs needed for visual analysis |
+| Visual analysis through ChatGPT | Image URLs were processed with AI and converted into structured variables such as composition, bottle presence, complexity, promotional text, and visual hierarchy |
+
+![Analysis methodology slide](assets/slides/analysis-methodology.png)
+
 ## Data Pipeline
 
 The project combined three technical workflows:
@@ -71,11 +82,11 @@ The project combined three technical workflows:
 
 The analysis focused on three high-activity commercial moments in the US market:
 
-| Period | Why it matters |
-| --- | --- |
-| Super Bowl | High attention, brand competition, strong creative pressure |
-| Black Friday / Cyber Monday | Promotion-heavy environment with commercial overlays |
-| Christmas | Seasonal messaging, gifting cues, and premium visual codes |
+| Period | Date window used in the project | Why it matters |
+| --- | --- | --- |
+| Super Bowl | January 9 - February 9, 2025 | High attention, brand competition, strong creative pressure |
+| Black Friday / Cyber Monday | November 1 - November 30, 2025 | Promotion-heavy environment with commercial overlays |
+| Christmas | December 1 - December 31, 2025 | Seasonal messaging, gifting cues, and premium visual codes |
 
 ## Dataset Logic
 
@@ -107,6 +118,17 @@ Examples of extracted visual variables:
 | Commercial messaging | `retail_overlay_present`, `promotion_badge_present`, `cta_text_present` |
 | Context | human presence, seasonality, premium codes |
 
+## AI Analysis Iterations
+
+The analysis was structured in two AI-assisted iterations:
+
+| Iteration | Input | Output |
+| --- | --- | --- |
+| 1. Within-group analysis | Enriched dataset for one group, either Top Performing or Low Performing | Document identifying the most and least recurrent visual variables within that group |
+| 2. Cross-group comparison | The two previous analysis documents | Document comparing the differences between Top and Low Performing creatives |
+
+This design made the analysis more traceable: each conclusion could be connected back to a defined group, a defined visual variable set, and a documented comparison step.
+
 ## Key Findings
 
 | Top Performing creatives tended to show | Low Performing creatives tended to show |
@@ -115,6 +137,19 @@ Examples of extracted visual variables:
 | Clearer visual hierarchy | More competing visual elements |
 | Cleaner composition | Higher visual saturation |
 | More dynamic layouts | More centered and conventional compositions |
+
+The public repository intentionally summarizes these results in text rather than publishing the original creative examples. The updated presentation contains real brand visuals used for academic defense, but they are excluded here to keep the GitHub version focused on process rather than proprietary campaign assets.
+
+## Limitations
+
+![Limitations slide](assets/slides/limitations.png)
+
+The project should be read as an exploratory creative analytics methodology, not as a causal performance model:
+
+- Performance was evaluated through CTR only.
+- Campaign objective, budget, audience, placement, and other media variables were outside the final model.
+- The available creative images came from platform catalog-style formats, which can constrain the visual interpretation.
+- Results identify associations and hypotheses for creative learning, not definitive proof that a specific visual element caused performance.
 
 ## Main Conclusion
 
@@ -160,9 +195,12 @@ Read more in [docs/conclusions.md](docs/conclusions.md).
 |-- README.md
 |-- assets/
 |   `-- slides/
-|       |-- title.png
+|       |-- analysis-methodology.png
+|       |-- conclusions.png
+|       |-- limitations.png
 |       |-- methodology.png
-|       `-- conclusions.png
+|       |-- research-question.png
+|       |-- title.png
 `-- docs/
     |-- conclusions.md
     `-- methodology.md
@@ -174,4 +212,4 @@ Read more in [docs/conclusions.md](docs/conclusions.md).
 
 ## Notes
 
-This repository is a public portfolio explanation of the project. It does not include private datasets, credentials, raw campaign exports, proprietary image URLs, or confidential brand-level results.
+This repository is a public portfolio explanation of the project. It does not include private datasets, credentials, raw campaign exports, proprietary image URLs, original creative examples, or confidential brand-level results.

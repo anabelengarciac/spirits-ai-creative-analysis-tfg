@@ -70,7 +70,18 @@ The results should be read as exploratory and associative.
 
 CTR can indicate immediate interaction, but it does not capture every effect of advertising creativity. Creative effectiveness can also depend on audience, placement, frequency, budget, brand equity, campaign objective, and media context.
 
+The updated defense presentation makes two limitations especially explicit:
+
+- the performance analysis relied on CTR rather than a multi-objective campaign model;
+- the available creative images were platform catalog-style images, which limits how much contextual creative interpretation can be extracted from the asset.
+
 Therefore, the project should be understood as a methodology for structured creative learning, not as a causal model.
+
+## 6. Public Portfolio Scope
+
+The GitHub version focuses on the process, not the proprietary creative assets.
+
+The presentation used for academic defense included visual examples of real creatives. Those examples are intentionally not included in this public repository. The repo keeps the methodology, findings, and reproducibility logic while excluding original creative examples, raw campaign exports, and brand-level confidential results.
 
 ## Final Takeaway
 
