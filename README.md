@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-portfolio_project-2ea44f)
 ![Project](https://img.shields.io/badge/project-final_degree_project-0969da)
 ![Domain](https://img.shields.io/badge/domain-creative_analytics_%2B_AI-6f42c1)
-![Stack](https://img.shields.io/badge/stack-BigQuery_%7C_Skai_%7C_Codex_%7C_AI-8250df)
+![Stack](https://img.shields.io/badge/stack-BigQuery_%7C_platform_API_%7C_AI_analysis-8250df)
 
 **Final Degree Project:** *Analysis of advertising creatives in spirits through AI*  
 **Degree:** Business Analytics  
@@ -24,7 +24,7 @@ Creative performance is often evaluated manually or through subjective marketing
 | Which visual patterns are linked to stronger CTR? | Compare Top vs Low Performing creatives |
 | Are some visual patterns repeated across commercial periods? | Analyze Super Bowl, Black Friday / Cyber Monday, and Christmas separately |
 | Can AI scale creative review? | Convert image content into structured variables |
-| Can the process be made reproducible? | Use Codex skills for extraction, enrichment, validation, and dataset preparation |
+| Can the process be made reproducible? | Use reusable AI-assisted workflows for extraction, enrichment, validation, and dataset preparation |
 
 ## Research Question
 
@@ -63,7 +63,7 @@ The updated presentation separates the methodology into two layers:
 
 | Layer | What happened |
 | --- | --- |
-| Data extraction through Codex | BigQuery was used to work with real 2025 campaign performance data, while Skai provided the creative image URLs needed for visual analysis |
+| Data extraction workflow | BigQuery was used to work with real 2025 campaign performance data, while the ad platform provided the creative image URLs needed for visual analysis |
 | Visual analysis through ChatGPT | Image URLs were processed with AI and converted into structured variables such as composition, bottle presence, complexity, promotional text, and visual hierarchy |
 
 ![Analysis methodology slide](assets/slides/analysis-methodology.png)
